@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soft Skills Enhancement Event</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <style>
+    .splide__slide img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">BYTE Club</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#" class="hover:text-blue-600">About</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-blue-600 text-white py-16 text-center">
+    <h1 class="text-4xl font-extrabold">Soft Skills Enhancement Event</h1>
+    <p class="mt-4 text-lg">Organized by BYTE Club, Computer Engineering Department, BVM</p>
+    <div id="typed-hero" class="mt-6 text-lg"></div>
+  </header>
+
+  <!-- Event Details Section -->
+  <section class="container mx-auto px-4 py-10">
+    <h2 class="text-3xl font-bold text-center text-blue-600 mb-8">Event Highlights</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Event Info -->
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <h3 class="text-xl font-semibold text-blue-600">Event Details</h3>
+        <ul class="list-disc pl-5 mt-4 text-gray-700">
+          <li><strong>Date:</strong> 19th February, 2024</li>
+          <li><strong>Time:</strong> 4:00 PM to 6:00 PM</li>
+          <li><strong>Place:</strong> BVM Auditorium</li>
+          <li><strong>Speaker:</strong> Mr. Rinkesh Parekh (Founder & CEO, Skillbuild)</li>
+        </ul>
+        <h3 class="mt-6 text-xl font-semibold text-blue-600">Coordinators</h3>
+        <ul class="list-disc pl-5 mt-4 text-gray-700">
+          <li><strong>Faculty:</strong> Dr. Mayur M. Vegad, Prof. Mosin I. Hasan, Prof. Kirtikumar J. Sharma, Dr. Uday K. Jaliya</li>
+          <li><strong>Student:</strong> Manan Patel, Mahek Tolat, Aaditya Desai, Srishti Singh, and others</li>
+        </ul>
+        <a href="../../assets/soft skill/SoftSkills Accelerator - Empowering Engineers.pdf" download class="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          Download PDF
+        </a>
+      </div>
+
+      <!-- Slideshow -->
+      <div class="splide" id="image-slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <!-- Replace placeholders with actual event images -->
+            <li class="splide__slide">
+              <img src="../../assets/soft skill/1719206821165.JPEG" alt="Event Image 1" class="rounded-lg">
+            </li>
+            <li class="splide__slide">
+              <img src="../../assets/soft skill/1719206821232.JPEG" alt="Event Image 2" class="rounded-lg">
+            </li>
+            <li class="splide__slide">
+              <img src="../../assets/soft skill/1719206821297.JPEG" alt="Event Image 3" class="rounded-lg">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speaker Details -->
+  <section class="bg-gray-100 py-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-600 mb-8">About the Speaker</h2>
+      <p class="text-lg text-gray-700">
+        Mr. Rinkesh Parekh, founder and CEO of Skillbuild, delivered an inspiring session on the importance of soft skills. 
+        He shared his journey of becoming a CEO and emphasized the enduring significance of human interaction 
+        and emotional intelligence in the age of AI.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-blue-600 text-white py-6 text-center">
+    <p>Contact BYTE Club: <a href="mailto:byteclub@bvm.edu" class="underline">byteclub@bvm.edu</a></p>
+    <p>&copy; 2024 BYTE Club, BVM. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Typed.js for Hero Section
+    new Typed('#typed-hero', {
+      strings: [
+        "Interactive Activities for Soft Skills", 
+        "Enhancing Emotional Intelligence", 
+        "Building Future-Ready Skills"
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+    });
+
+    // Splide.js for Image Slider
+    new Splide('#image-slider', {
+      type: 'loop',
+      autoplay: true,
+      interval: 3000,
+      arrows: false,
+      pagination: true,
+    }).mount();
+  </script>
+</body>
+</html>
